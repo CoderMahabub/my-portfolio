@@ -5,20 +5,21 @@ import memojiAvatar4 from "@/assets/images/memoji-avatar-4.png";
 import memojiAvatar5 from "@/assets/images/memoji-avatar-5.png";
 import { SectionHeader } from "@/components/SectionHeader";
 import Image from "next/image";
-import test from "node:test";
+import grainImage from "@/assets/images/grain.jpg";
+import { Card } from "@/components/Card";
 
 const testimonials = [
   {
     name: "Jimmy Jordan",
     position: "Head of Design @ Stop Bullying",
     text: "CoderMahabub is very good with his work. He delivered as per the expectation. Went out of his way to make sure I 100% satisfied. Thank you so much.",
-    avatar: memojiAvatar2,
+    avatar: memojiAvatar1,
   },
   {
     name: "Megal Vpage",
     position: "Web Developer @ Vpage",
     text: "Awesome service, great communicator, and made sure I was happy with the final product. I highly recommended his services and will definitely be a returning client!",
-    avatar: memojiAvatar1,
+    avatar: memojiAvatar2,
   },
 
   {
@@ -43,22 +44,38 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div>
-      <SectionHeader
-        eyebrow="Happy Clients"
-        title="What Clients Say About Me"
-        description="Do not Just take my word for it. See what my clients have to say about
+    <div className="py-16">
+      <div className="container">
+        <SectionHeader
+          eyebrow="Happy Clients"
+          title="What Clients Say About Me"
+          description="Do not Just take my word for it. See what my clients have to say about
         my work."
-      />
-      <div>
-        {testimonials.map((testimonial) => (
-          <div key={testimonial.name}>
-            <Image src={testimonial.avatar} alt={testimonial.name} />
-            <div>{testimonial.name}</div>
-            <div>{testimonial.position}</div>
-            <div>{testimonial.text}</div>
+        />
+        <div className="mt-16 flex overflow-x-clip [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+          <div className="flex gap-8 flex-none">
+            {testimonials.map((testimonial) => (
+              <Card key={testimonial.name} className="max-w-xs">
+                <div className="flex gap-4 items-center">
+                  <div className="size-14 bg-gray-700 inline-flex items-center justify-center rounded-full flex-shrink-0">
+                    <Image
+                      src={testimonial.avatar}
+                      alt={testimonial.name}
+                      className="max-h-full"
+                    />
+                  </div>
+                  <div>
+                    <div className="font-semibold">{testimonial.name}</div>
+                    <div className="text-sm text-white/40">
+                      {testimonial.position}
+                    </div>
+                  </div>
+                </div>
+                <p className="mt-4 text-sm">{testimonial.text}</p>
+              </Card>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
