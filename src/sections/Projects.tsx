@@ -4,21 +4,20 @@ import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
-import grainImage from "@/assets/images/grain.jpg";
 import { SectionHeader } from "@/components/SectionHeader";
 import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Stunning Portfolio",
+    year: "2024",
+    title: "Developer Portfolio",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "https://codermahabub.com",
     image: darkSaasLandingPage,
   },
   {
@@ -57,10 +56,13 @@ export const ProjectsSection = () => {
           description="See how I transformed concepts into engaging digital experience."
         />
         <div className="flex flex-col mt-10 md:mt-20 gap-20">
-          {portfolioProjects.map((project) => (
+          {portfolioProjects.map((project, projectIndex) => (
             <Card
               key={project.title}
-              className="px-8 pb-0 pt-8 pt:pt-16 lg:px-20 md:pt-12 md:px-20"
+              className="px-8 pb-0 pt-8 pt:pt-16 lg:px-20 md:pt-12 md:px-20 sticky"
+              style={{
+                top: `calc(64px + ${projectIndex * 40}px`,
+              }}
             >
               <div className="lg:grid lg:grid-cols-2 lg:gap-16">
                 <div className="lg:pb-16">
