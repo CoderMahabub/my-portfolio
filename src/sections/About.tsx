@@ -97,8 +97,22 @@ export const AboutSection = () => {
         <SectionHeader
           eyebrow="About Me"
           title="A Glimpse Into My World"
-          description="Learn more about who I am, what I do,what inspires me."
+          // description="Learn more about who I am, what I do,what inspires me."
         />
+        <div>
+          <p className="text-center text-white/60 mt-4">
+            As a Computer Science and Engineering graduate with a passion for
+            web development, I specialize in building dynamic and responsive
+            frontend applications using React and Next.js. Currently based in
+            Japan, I am honing my skills in the Japanese language while actively
+            seeking full-time opportunities in the web development field. With a
+            strong focus on creating user-friendly, performant, and scalable web
+            solutions, I am eager to contribute my expertise to innovative
+            projects. My background in React-based development and my ongoing
+            commitment to professional growth make me a versatile and dedicated
+            developer ready to tackle new challenges.
+          </p>
+        </div>
         <div className="mt-20 flex flex-col gap-8">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-5 lg:grid-cols-3">
             <Card className="h-[320px] col-span-2 lg:col-span-1">

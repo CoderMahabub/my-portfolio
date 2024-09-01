@@ -9,7 +9,7 @@ import { TestimonialsSection } from "@/sections/Testimonials";
 
 export default function Home() {
   return (
-    <div>
+    <div className="scroll-behavior:smooth [duration:1s]">
       <Header />
       <HeroSection />
       <ProjectsSection />

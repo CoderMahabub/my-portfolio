@@ -1,5 +1,5 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
+import coderMahabub from "@/assets/images/codermahabub.png";
+import reactAuthentication from "@/assets/images/authentication.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -9,39 +9,42 @@ import { Card } from "@/components/Card";
 
 const portfolioProjects = [
   {
-    company: "Stunning Portfolio",
+    company: "Coder Mahabub",
     year: "2024",
     title: "Developer Portfolio",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "ReactJS, NextJS,Tailwind CSS, Framer" },
+      { title: "Created Seamless Digital Experience" },
+      { title: "Build Attractive Interfaces for Enhanced User Engagement" },
     ],
     link: "https://codermahabub.com",
-    image: darkSaasLandingPage,
+    codeLink: "https://github.com/CoderMahabub/my-portfolio",
+    image: coderMahabub,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "Firebase Auth",
+    year: "2024",
+    title: "React Firebase Authentication",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "ReactJS, React Router, Redux & Firebase" },
+      { title: "LogIn & SignUp using Email & Password" },
+      { title: "Direct Login with Google & Reset Password by Email" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://book-list-with-firebase-124f7.web.app/",
+    codeLink: "https://github.com/CoderMahabub/react-firebase-auth.git",
+    image: reactAuthentication,
   },
   {
     company: "Quantum Dynamics",
-    year: "2023",
+    year: "2025",
     title: "AI Startup Landing Page",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "ReactJS, NextJS, Tailwind CSS, Framer" },
+      { title: "Under Development" },
+      { title: "Working on progress" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
+    link: "https://codermahabub.com",
+    codeLink: "https://github.com/CoderMahabub",
     image: aiStartupLandingPage,
   },
 ];
@@ -86,10 +89,16 @@ export const ProjectsSection = () => {
                       </li>
                     ))}
                   </ul>
-                  <a href={project.link}>
-                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
+                  <a href={project.link} target="_blank">
+                    <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6 rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8 mb-4 mr-2">
                       <span>Visit Live Site</span>
                       <ArrowUpRightIcon className="size-4" />
+                    </button>
+                  </a>
+                  <a href={project?.codeLink} target="_blank">
+                    <button className="text-white bg-gray-900 inline-flex items-center font-semibold px-6 h-12 rounded-xl gap-2 w-full md:w-auto border border-gray-900">
+                      <span className="text-semibold"> Code Source</span>
+                      <ArrowUpRightIcon className="size4" />
                     </button>
                   </a>
                 </div>
