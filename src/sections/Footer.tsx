@@ -2,19 +2,19 @@ import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
 const footerLinks = [
   {
     title: "Github",
-    href: "#",
+    href: "https://github.com/CoderMahabub",
   },
   {
     title: "LinkedIn",
-    href: "#",
+    href: "https://www.linkedin.com/in/codermahabub/",
   },
   {
     title: "Facebook",
-    href: "#",
+    href: "https://www.facebook.com/mdmahabubazam/",
   },
   {
     title: "Youtube",
-    href: "#",
+    href: "https://www.youtube.com/@mahabubinjapan",
   },
 ];
 
