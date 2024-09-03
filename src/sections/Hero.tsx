@@ -128,14 +128,22 @@ export const HeroSection = () => {
             but at the same time functional.
           </p>
         </div>
-        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+        <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4 relative z-10">
           <button className="inline-flex items-center gap-2 border border-white/15 px-8 h-12 rounded-xl">
-            <span className="font-semibold">Explore My Work</span>
+            <a href="#projects" rel="noopener noreferrer">
+              <span className="font-semibold">Explore My Work</span>
+            </a>
             <ArrowDown className="size-4" />
           </button>
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
-            <span className="font-semibold">Lets Connect</span>
+            <a
+              href="https://drive.google.com/file/d/1yvlfVxvtiMJurbrftbIxvJtFnO5lPNpX/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="font-semibold">View Resume</span>
+            </a>
           </button>
         </div>
       </div>
