@@ -13,10 +13,11 @@ export const Header = () => {
           About
         </a>
         <a
-          href="#contact"
+          href="https://github.com/CoderMahabub"
           className="nav-item bg-white text-gray-900 hover:bg-white/70 hover:text-gray-900"
+          target="_blank"
         >
-          Contact
+          Github Profile
         </a>
       </nav>
     </div>

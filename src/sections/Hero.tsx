@@ -138,7 +138,7 @@ export const HeroSection = () => {
           <button className="inline-flex items-center gap-2 border border-white bg-white text-gray-900 h-12 px-6 rounded-xl">
             <span>👋</span>
             <a
-              href="https://drive.google.com/file/d/1yvlfVxvtiMJurbrftbIxvJtFnO5lPNpX/view?usp=sharing"
+              href="https://drive.google.com/file/d/1rtbPWD2UpE-N4vF2bDA2HsP4GIqU6AJa/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >

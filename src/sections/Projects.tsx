@@ -1,6 +1,6 @@
 import coderMahabub from "@/assets/images/codermahabub.png";
 import reactAuthentication from "@/assets/images/authentication.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import cudaLandingPage from "@/assets/images/cuda.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -35,17 +35,17 @@ const portfolioProjects = [
     image: reactAuthentication,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2025",
-    title: "AI Startup Landing Page",
+    company: "Design Dot IT",
+    year: "2022",
+    title: "Design & Software Firm",
     results: [
-      { title: "ReactJS, NextJS, Tailwind CSS, Framer" },
-      { title: "Under Development" },
-      { title: "Working on progress" },
+      { title: "HTML,CSS,JavaScript" },
+      { title: "Landing Page for Design Dot IT" },
+      { title: "Static One Page Landing Page" },
     ],
-    link: "https://codermahabub.com",
-    codeLink: "https://github.com/CoderMahabub",
-    image: aiStartupLandingPage,
+    link: "https://codermahabub.github.io/cuda/",
+    codeLink: "https://github.com/CoderMahabub/cuda",
+    image: cudaLandingPage,
   },
 ];
 
