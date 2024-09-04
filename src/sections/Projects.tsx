@@ -1,5 +1,6 @@
 import coderMahabub from "@/assets/images/codermahabub.png";
 import reactAuthentication from "@/assets/images/authentication.png";
+import road2Study from "@/assets/images/road2study.png";
 import cudaLandingPage from "@/assets/images/cuda.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
@@ -33,6 +34,19 @@ const portfolioProjects = [
     link: "https://book-list-with-firebase-124f7.web.app/",
     codeLink: "https://github.com/CoderMahabub/react-firebase-auth.git",
     image: reactAuthentication,
+  },
+  {
+    company: "Road2Study",
+    year: "2023",
+    title: "Study Abroad and Online Course",
+    results: [
+      { title: "Wordpress Theme Customization" },
+      { title: "WordPress, HTML, CSS, JavaScript" },
+      { title: "Used Elementor Page Builder" },
+    ],
+    link: "https://road2study.com",
+    codeLink: "https://road2study.com",
+    image: road2Study,
   },
   {
     company: "Design Dot IT",
