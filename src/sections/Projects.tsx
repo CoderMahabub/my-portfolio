@@ -1,7 +1,7 @@
 import coderMahabub from "@/assets/images/codermahabub.png";
 import reactAuthentication from "@/assets/images/authentication.png";
 import road2Study from "@/assets/images/road2study.png";
-import cudaLandingPage from "@/assets/images/cuda.png";
+import designDotIt from "@/assets/images/designdotit.png";
 import Image from "next/image";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRightIcon from "@/assets/icons/arrow-up-right.svg";
@@ -57,9 +57,9 @@ const portfolioProjects = [
       { title: "Landing Page for Design Dot IT" },
       { title: "Static One Page Landing Page" },
     ],
-    link: "https://codermahabub.github.io/cuda/",
+    link: "https://designdotit.com",
     codeLink: "https://github.com/CoderMahabub/cuda",
-    image: cudaLandingPage,
+    image: designDotIt,
   },
 ];
 
