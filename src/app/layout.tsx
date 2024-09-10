@@ -14,7 +14,7 @@ const calistoga = Calistoga({
 export const metadata: Metadata = {
   title: "CM - Frontend Web Developer",
   description:
-    "CoderMahabub is a React based Frontend web Developer, currently living in japan.",
+    "CoderMahabub is a React-based Frontend web Developer, currently living in Japan. Computer Science graduate specializing in React and Next.js web development. Based in Japan, seeking full-time opportunities while improving Japanese language skills. Skilled in building responsive, scalable, and user-friendly web solutions.",
 };
 
 export default function RootLayout({
